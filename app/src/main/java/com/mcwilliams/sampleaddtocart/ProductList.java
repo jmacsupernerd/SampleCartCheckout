@@ -61,8 +61,6 @@ public class ProductList extends ActionBarActivity {
                     @Override
                     public void onAnimationEnd(Animator animation) {
                         Log.d("", String.valueOf(position));
-                        productList.remove(position);
-                        arrayAdapter.notifyDataSetChanged();
                         circleCartIcon.setPressed(true);
                         circleCartIcon.setPressed(false);
                         count.setText(String.valueOf(++cartCount));
